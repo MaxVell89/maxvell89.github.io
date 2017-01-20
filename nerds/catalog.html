@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Нёрдс</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container clearfix">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" width="139" height="56"></a></div>
+                <div class="top-menu">
+                    <ul>
+                        <li class="active"><a href="#">Студия</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li class="basked"><a href="#"><i class="icon-basket"></i> Корзина</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container catalog-title">
+               Добро пожаловать в магазин готовых макетов
+            </div>
+        </div>
+        <div class="container clearfix">
+            <div class="catalog-left-column">
+                <form action="#" method="post" class="catalog-filter">
+                    <h3>Стоимость:</h3>
+                    <h3>Сетка:</h3>
+                    <input type="radio" name="grid" id="grid-1">
+                    <label for="grid-1">Адаптивная</label>
+                    <input type="radio" name="grid" id="grid-2">
+                    <label for="grid-2">Фиксированная</label>
+                    <input type="radio" name="grid" id="grid-3">
+                    <label for="grid-3">Резиновая</label>
+                    <h3>Особенности:</h3>
+                    <input type="checkbox" name="features" id="features-1">
+                    <label for="features-1">Слайдер</label>
+                    <input type="checkbox" name="features" id="features-2">
+                    <label for="features-2">Блок преимуществ</label>
+                    <input type="checkbox" name="features" id="features-3">
+                    <label for="features-3">Новости</label>
+                    <input type="checkbox" name="features" id="features-4">
+                    <label for="features-4">Галерея</label>
+                    <input type="checkbox" name="features" id="features-5">
+                    <label for="features-5">Корзина</label>
+                    <button type="submit" class="btn">Показать</button>
+                </form>
+            </div>
+            <div class="catalog-right-column">
+                <div class="sort">
+                    Сортировать:
+                    <a href="#">По цене</a>
+                    <a href="#">По типу</a>
+                    <a href="#">По функционалу</a>
+                    <div class="up-down">
+                        <a href="#" class="active">▼</a>
+                        <a href="#">▲</a>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="product"><a href="#"><img src="img/product-1.jpg" width="240" height="240"></a></div>
+                    <div class="product"><a href="#"><img src="img/product-2.jpg" width="240" height="240"></a></div>
+                    <div class="product"><a href="#"><img src="img/product-3.jpg" width="240" height="240"></a></div>
+                    <div class="product"><a href="#"><img src="img/product-4.jpg" width="240" height="240"></a></div>
+                    <div class="product"><a href="#"><img src="img/product-5.jpg" width="240" height="240"></a></div>
+                    <div class="product"><a href="#"><img src="img/product-6.jpg" width="240" height="240"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-map">
+                <div class="map-text">
+                    <div class="map-title">NЁRDS DESIGN STUDIO</div>
+                    <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <a href="#" class="btn modal-window">Напишите нам</a>
+                </div>
+            </div>
+            <div class="container clearfix">
+                <div class="social-icons">
+                    <a href="#" class="social-icon icon-vk"></a>
+                    <a href="#" class="social-icon icon-facebook"></a>
+                    <a href="#" class="social-icon icon-instagramm"></a>
+                </div>
+                <div class="social-cta">
+                    <div class="social-title">Давайте дружить, это выгодно!</div>
+                    Скидка 10% для друзей из социальных сетей.
+                </div>
+            </div>
+        </div>
+        <div class="modal-content">
+            <div class="modal-close"></div>
+            <form action="/echo" method="post">
+               <div class="clearfix">
+                   <div class="form-left-column">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
+                    </div>
+                    <div class="form-right-column">
+                        <label for="e-mail">Ваш e-mail:</label>
+                        <input type="email" id="e-mail" name="e-mail" placeholder="Для отправки ответа" required>
+                    </div>
+               </div> 
+                <label for="text-mail">Текст письма:</label>
+                <textarea placeholder="В свободной форме" required></textarea>
+                <button type="submit " class="btn">Отправить</button>
+                <button type="reset" class="btn">Отмена</button>
+            </form>
+        </div>
+        <script src="js/modal-window.js"></script>
+    </body>
+</html>
